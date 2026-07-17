@@ -1,2 +1,72 @@
-# Termux-To-Sever
-无需root（至少是有无需root方案的）安装ubuntu，宝塔面板，内网穿透
+# Termux 自动化部署脚本
+
+一键在 Android 上部署 Ubuntu 20.04 + 宝塔面板 + Cloudflare 内网穿透。
+
+## 快速开始
+
+### 方式一：GitHub 下载（推荐）
+
+```bash
+pkg install -y wget && wget --no-check-certificate -O termux_install.sh "https://github.com/chidianqianying/Termux-To-Sever/releases/download/%E6%AD%A3%E5%BC%8F%E7%89%88/termux_install.sh" && chmod +x termux_install.sh && bash termux_install.sh
+```
+
+### 方式二：备用服务器下载
+
+```bash
+pkg install -y wget && wget --no-check-certificate -O termux_install.sh "https://cdqylua.dpdns.org/down.php/325d942aa2d3eb12f1f2ebac653536b7.sh" && chmod +x termux_install.sh && bash termux_install.sh
+```
+
+## 功能菜单
+
+| 步骤 | 功能 |
+|:---|:---|
+| 1 | 安装准备环境（更新 Termux，安装 wget curl git proot） |
+| 2 | 安装 Ubuntu 20.04（下载 rootfs，解压，配置 DNS，创建启动脚本，配置自启动） |
+| 3 | 安装 Python（更新源，安装工具，添加 PPA，验证版本，时区提示） |
+| 4 | 安装宝塔面板（下载安装脚本，执行安装，4步修复依赖） |
+| 5 | 安装 Cloudflare 内网穿透（下载 cloudflared，验证，登录授权） |
+| 6 | 配置 Cloudflare 内网穿透（创建隧道，自动获取 ID，询问穿透数量 1-9，交叉询问地址/域名，生成 config.yml，前台/后台启动） |
+| 7 | 安装启动脚本（生成 ~/START.SH） |
+| 8 | 结束 |
+
+## 启动脚本（START.SH）
+
+安装后运行 `~/START.SH` 管理：
+
+| 选项 | 功能 |
+|:---|:---|
+| 1 | 以超级用户权限启动 Ubuntu |
+| 2 | 启动 Ubuntu |
+| 3 | 启动宝塔面板 |
+| 4 | 启动 Cloudflare 内网穿透 |
+| 5 | 修改 Cloudflare 内网穿透 |
+| 6 | 退出 |
+
+## 环境互锁
+
+- **非 Ubuntu 环境**：只允许执行步骤 1-2
+- **Ubuntu 环境**：只允许执行步骤 3-8
+
+## 彩蛋
+
+输入特定数字触发彩蛋：
+
+| 输入 | 效果 |
+|:---|:---|
+| 114514 | 好臭的数字 |
+| 2778 | 真的吗 |
+| 91 | 你别这样 |
+| 9178 | 好恶俗 |
+| 0721 | 我会看的，我会看的 |
+| 其他 | 已删除随机 Android 包名 |
+
+## 注意事项
+
+1. 务必按顺序执行
+2. 步骤 3 安装 Python 时，选时区中国用户请选择：第一次输入 6，第二次输入 70
+3. 步骤 5 Cloudflare 登录需要浏览器访问 URL 授权
+4. 步骤 6 配置穿透时，最多支持 9 组端口
+
+## 开源协议
+
+MIT License
