@@ -46,7 +46,7 @@ pkg install -y wget && wget --no-check-certificate -O termux_install.sh "https:/
 
 - **非 Ubuntu 环境**：只允许执行步骤 1-2
 - **Ubuntu 环境**：只允许执行步骤 3-8
--**超绝防呆设计**：适配代码困难症
+- **超绝防呆设计**：适配代码困难症
 
 ## 注意事项
 
