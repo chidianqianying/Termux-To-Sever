@@ -1,6 +1,6 @@
 # Termux 自动化部署脚本
 
-一键在 Android 上部署 Ubuntu 20.04 + 宝塔面板 + Cloudflare 内网穿透。
+一键在 Android 上（仅限aarch64）部署 Ubuntu 20.04 + 宝塔面板 + Cloudflare 内网穿透。
 
 ## 快速开始
 
