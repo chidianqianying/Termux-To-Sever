@@ -7,13 +7,13 @@
 ### 方式一：GitHub 下载（推荐）
 
 ```bash
-cd && pkg install -y wget && wget --no-check-certificate -O termux_install.sh "https://github.com/chidianqianying/Termux-To-Sever/releases/download/%E6%AD%A3%E5%BC%8F%E7%89%88%EF%BC%9F/termux_install.sh" && chmod +x termux_install.sh && bash termux_install.sh
+cd && pkg install -y wget && wget --no-check-certificate -O termux_install.sh "https://github.com/chidianqianying/Termux-To-Sever/releases/download/%E6%AD%A3%E5%BC%8F%E7%89%88%EF%BC%81/termux_install.sh" && chmod +x termux_install.sh && bash termux_install.sh
 ```
 
 ### 方式二：备用服务器下载
 
 ```bash
-cd && pkg install -y wget && wget --no-check-certificate -O termux_install.sh "https://cdqylua.dpdns.org/down.php/5fe6f5412ced6eee081aadd56c2d92c8.sh" && chmod +x termux_install.sh && bash termux_install.sh
+cd && pkg install -y wget && wget --no-check-certificate -O termux_install.sh "[https://cdqylua.dpdns.org/down.php/5fe6f5412ced6eee081aadd56c2d92c8.sh](https://cdqylua.dpdns.org/down.php/56e667f0f501a40f616019c82a306952.sh)" && chmod +x termux_install.sh && bash termux_install.sh
 ```
 
 ## 功能菜单
